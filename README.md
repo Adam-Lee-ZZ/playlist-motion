@@ -12,4 +12,7 @@ press the "Generate Access Token"and you will get it.
 the model used textblob as its sentiment analysis tool.
 you can just change it into what ever you like.
 
+the outputs are a word cloud and a countplot.
+it seems to be simple, but you can use the data for further analysis.
+
 **May liberation and democracy back to China**

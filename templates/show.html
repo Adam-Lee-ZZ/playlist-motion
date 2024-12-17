@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistMotion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* 內嵌一些基本樣式 */
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* 圖片間距 */
+            margin-top: 20px;
+        }
+
+        .images-container img {
+            width: 150px; /* 調整圖片寬度 */
+            height: auto; /* 保持圖片比例 */
+            border-radius: 8px; /* 圓角效果 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 頁面標題 -->
+    <div class="header">
+        <h1>PlaylistMotion</h1>
+    </div>
+
+    <!-- 圖片展示 -->
+    <div class="images-container">
+        <img src="{{ url_for('static', filename='css/cloud.png') }}" alt="Cloud Image">
+        <img src="{{ url_for('static', filename='css/six.png') }}" alt="Six Image">
+    </div>
+</body>
+</html>

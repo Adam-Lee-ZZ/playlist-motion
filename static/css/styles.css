@@ -1,0 +1,90 @@
+/* 背景設置 */
+body {
+  background-image: url('A.png'); /* 背景圖片A */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+
+/* 標題樣式：移到左上角 */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header h1 {
+  font-style: italic;
+  color: black;
+  background-color: green;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* 輸入框和提交按鈕 */
+.content {
+  margin-top: 20px;
+}
+
+#inputField {
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+#submitButton {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submitButton:hover {
+  background-color: darkgreen;
+}
+
+.container {
+  display: flex; /* 改為 flex 布局 */
+  flex-direction: column; /* 確保內容垂直排列 */
+  align-items: center; /* 水平居中 */
+  flex-wrap: wrap;
+  margin-top: 100px; /* 添加上邊距 */
+  padding-top: 20px; /* 內邊距留白 */
+}
+
+
+
+/* 描述文字：放在輸入框下面 */
+.description {
+  margin-top: 20px; /* 與輸入框之間的間距 */
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+  border-radius: 10px;
+  text-align: center;
+  width: 60%; /* 調整寬度 */
+  margin-left: auto;
+  margin-right: auto;
+    flex-direction: column;
+}
+
+.playlist-card:first-child {
+  scroll-margin-top: 100px; /* 距離視窗頂部 20px */
+}

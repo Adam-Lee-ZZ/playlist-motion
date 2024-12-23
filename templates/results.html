@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistMotion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_sub.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>PlaylistMotion</h1>
+    </div>
+    <div class="pale"></div><div class="pale"></div><div>
+        <div style="text-align: center;">
+        <p class="description">
+            <strong>##Analysis result##</strong>
+        </p>
+        <div>
+            <p class="description">
+                Word Cloud
+            </p>
+            <img src="data:image/png;base64,{{ word }}" alt="Base64 Image" style="width: 75%; height: auto;">
+        </div>
+        <div>
+            <p class="description">
+                Six dimensions Analysis
+            </p>
+            <img src="data:image/png;base64,{{ six }}" alt="Base64 Image" style="width: 75%; height: auto;">
+            </div>
+            <strong class="description">Explanation:</strong>
+            <h3 class="description">
+                1. Vision
+                Definition: Refers to the extent to which a word is associated with visual perception.
+                High Score: Words strongly linked to visual imagery (e.g., "color," "bright," "tree").
+                Low Score: Words that are not visually oriented (e.g., "thought," "justice").
+                2. Motor
+                Definition: Measures the degree to which a word evokes motor activity or physical movement.
+                High Score: Words related to actions or movements (e.g., "run," "grab," "dance").
+                Low Score: Words less associated with physical motion (e.g., "idea," "calm").
+                3. Socialness
+                Definition: Indicates the extent to which a word relates to social interaction or relationships.
+                High Score: Words tied to social concepts or people (e.g., "friend," "conversation," "team").
+                Low Score: Words less associated with social contexts (e.g., "rock," "solitude").
+                4. Emotion
+                Definition: Captures the emotional salience or affective charge of a word.
+                High Score: Words that strongly evoke emotions (e.g., "love," "anger," "fear").
+                Low Score: Neutral or emotionally bland words (e.g., "table," "object").
+                5. Time
+                Definition: Refers to the association of a word with temporal concepts or the passage of time.
+                High Score: Words linked to temporal notions (e.g., "yesterday," "future," "hour").
+                Low Score: Words unrelated to time (e.g., "chair," "music").
+                6. Space
+                Definition: Measures the extent to which a word evokes spatial awareness or concepts of location.
+                High Score: Words that describe spatial relations or physical space (e.g., "above," "distance," "map").
+                Low Score: Words unrelated to spatial concepts (e.g., "truth," "emotion").
+            </h3>
+            <strong class="description">If you like the project, please star it on github. Thanks a lot~</strong>
+            <h3 href = 'https://github.com/Adam-Lee-ZZ/playlist-motion'>https://github.com/Adam-Lee-ZZ/playlist-motion</h3>
+            <h3 class="description">The SSDD focuses on six major semantic dimensions: vision, motor, socialness, emotion, time, and space. The visual and motor dimensions are included to reflect the impact of sensory-motor experience on semantic representation. Sensory and motor dimensions are probably the most frequently investigated semantic dimensions, and their importance for object and action concepts has been well established. Among the multiple sensory dimensions associated with semantic representation, we chose the visual dimension because vision is the dominant sensory modality. The behavioral and neural impacts of visual and motor semantics on cognitive processing have been indicated by many previous studies. The social and emotional dimensions are included to reflect the impact of social-emotional experience on semantic representation. These dimensions have dissociable neural correlates and are especially important for the representation of mental and abstract concepts. Huth et al.2 investigated the organization of semantic representation in the brain using a data-driven approach and found that social-emotional and sensory-motor semantics are associated with the opposite ends of the most important data-driven semantic dimension. Therefore, the social and emotional dimensions can serve as important supplements to the visual and motor dimensions to reflect semantic representation. The time and space dimensions are especially important for the representation of events and situations. Dissociable neural correlates of these dimensions have also been indicated by neuropsychological and neuroimaging research37,39. The representativeness of the six dimensions has been reflected by a comprehensive review of experiential semantic attributes by Binder et al.1. Binder et al.1 summarized 65 semantic dimensions belonging to 14 domains, among which more than 2/3 of the dimensions belong to the domains of vision, motor, socialness, emotion, time, and space. The SSDD treats these six domains as coarse-grained semantic dimensions and provides general ratings for each of them.</h3>
+        <p class="description">
+            Wang, S., Zhang, Y., Shi, W., Zhang, G., Zhang, J., Lin, N., & Zong, C. (2023). A large dataset of semantic ratings and its computational extension. Scientific Data, 10(1), 106.
+        </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

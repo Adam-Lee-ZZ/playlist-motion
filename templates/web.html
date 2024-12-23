@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistMotion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>PlaylistMotion</h1>
+    </div>
+
+    <div class="content">
+        <input id="inputField" type="text" placeholder="Enter your text here">
+        <button id="submitButton" onclick="submitData()">Submit</button>
+    </div>
+    <div id="result">
+        <div id = "container"></div>
+    </div>
+    <div id="buttons"></div>    
+
+    <div>
+        <p class="description">
+            <strong>##After submitting, please waite 10 seconds for auto redirection.##</strong>
+        </p>
+        <p class="description">
+            Analysis the motion of a playlist based on Spotify API, Genius API, and SSDD.
+            You can create a playlist in Spotify and add some favorite songs in it.
+            The program will tell you the motion and sentiment feature of the playlist.
+        </p>
+        <p class="description">
+            <strong>## Please enter a playlist name in Spotify. ##</strong>
+        </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
